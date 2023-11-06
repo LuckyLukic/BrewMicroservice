@@ -3,7 +3,7 @@ package luca.microservice.brewMicroservices.controller;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
@@ -20,7 +20,8 @@ class BeerControllerTest {
     MockMvc mockMvc;
     @Test
     void getBeerById() throws Exception {
-      //  mockMvc.perform(get("/api/vi/bber/" + UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))).andExpect(status().isOK);
+        mockMvc.perform(get("/api/vi/beer/" + UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
+        .andExpect(status().isOk());
     }
 
     @Test
