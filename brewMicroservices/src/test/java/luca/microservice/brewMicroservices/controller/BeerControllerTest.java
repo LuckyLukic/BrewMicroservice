@@ -26,8 +26,8 @@ class BeerControllerTest {
 
     @Test
     void getBeerById() throws Exception {
-        mockMvc.perform(get("/api/vi/beer/" + UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
-        .andExpect(status().isOk());
+        mockMvc.perform(get("/api/v1/beer/" + UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
     }
 
     @Test
