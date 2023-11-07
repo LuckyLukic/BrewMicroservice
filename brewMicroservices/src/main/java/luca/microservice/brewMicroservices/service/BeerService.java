@@ -4,29 +4,20 @@ import luca.microservice.brewMicroservices.Model.BeerDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-@RestController
-@RequestMapping("/api/vq/beer")
-public class BeerService {
 
-    @GetMapping("/{beerId}")
-    public ResponseEntity<BeerDto> getBeerById (@PathVariable UUID beerID) {
+public interface BeerService {
 
-        return new ResponseEntity<>(BeerDto.builder().build(),HttpStatus.OK);
-    }
+    BeerDto getBeerById(UUID beerId);
 
-    @PostMapping
-    public ResponseEntity<BeerDto> saveBeer (@RequestBody BeerDto beer) {
+    BeerDto saveNewBeer(BeerDto beerDto);
 
-        return new ResponseEntity<>(HttpStatus.CREATED);
-    }
+    void updateBeer(UUID beerId, BeerDto beerDto);
 
-    @PutMapping("/{beerId}")
-    public ResponseEntity<BeerDto> updateBeer (@PathVariable UUID beerId, @RequestBody BeerDto beer) {
+    void deleteById(UUID beerId);
 
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
 }
