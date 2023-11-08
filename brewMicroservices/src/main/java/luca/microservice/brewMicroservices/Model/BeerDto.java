@@ -14,10 +14,31 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 public class BeerDto {
+
     private UUID id;
+
+
+    private Integer version;
+
+
+    private OffsetDateTime createdDate;
+
+
+    private OffsetDateTime lastModifiedDate;
+
+
     private String beerName;
-    private String beerStyle;
-    private Long upc;
+
+
+    private BeerStyleEnum beerStyle;
+
+
+    private String upc;
+
+
+    private BigDecimal price;
+
+    private Integer quantityOnHand;
 
 
 }

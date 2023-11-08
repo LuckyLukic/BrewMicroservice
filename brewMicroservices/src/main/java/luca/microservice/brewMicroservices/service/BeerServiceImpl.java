@@ -2,6 +2,7 @@ package luca.microservice.brewMicroservices.service;
 
 import lombok.extern.slf4j.Slf4j;
 import luca.microservice.brewMicroservices.Model.BeerDto;
+import luca.microservice.brewMicroservices.Model.BeerStyleEnum;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -15,7 +16,7 @@ public class BeerServiceImpl implements BeerService {
             return BeerDto.builder()
                     .id(UUID.randomUUID())
                     .beerName("Galaxy Cat")
-                    .beerStyle("Pale Ale")
+                    .beerStyle(BeerStyleEnum.PALE_ALE)
                     .build();
         }
 
