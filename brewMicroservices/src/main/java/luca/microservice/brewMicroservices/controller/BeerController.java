@@ -1,5 +1,6 @@
 package luca.microservice.brewMicroservices.controller;
 
+import jakarta.validation.Valid;
 import luca.microservice.brewMicroservices.Model.BeerDto;
 import luca.microservice.brewMicroservices.service.BeerService;
 import org.springframework.http.HttpHeaders;
@@ -22,7 +23,7 @@ public class BeerController {
     }
 
     @PostMapping("")
-    public ResponseEntity <BeerDto>handlePost(@RequestBody BeerDto beerDto){
+    public ResponseEntity <BeerDto>handlePost(@Valid  @RequestBody BeerDto beerDto){
 
         BeerDto savedDto = beerService.saveNewBeer(beerDto);
 
@@ -34,7 +35,7 @@ public class BeerController {
     }
 
     @PutMapping({"/{beerId}"})
-    public ResponseEntity<BeerDto> handleUpdate(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto){
+    public ResponseEntity<BeerDto> handleUpdate(@PathVariable("beerId") UUID beerId,@Valid @RequestBody BeerDto beerDto){
 
         beerService.updateBeer(beerId, beerDto);
 
