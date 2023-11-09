@@ -1,4 +1,4 @@
-package luca.microservice.brewMicroservices.controller;
+package luca.microservice.brewMicroservices.web.controller;
 
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;

@@ -1,8 +1,8 @@
-package luca.microservice.brewMicroservices.service;
+package luca.microservice.brewMicroservices.web.service;
 
 import lombok.extern.slf4j.Slf4j;
-import luca.microservice.brewMicroservices.Model.BeerDto;
-import luca.microservice.brewMicroservices.Model.BeerStyleEnum;
+import luca.microservice.brewMicroservices.web.Model.BeerDto;
+import luca.microservice.brewMicroservices.web.Model.BeerStyleEnum;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;

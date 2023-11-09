@@ -1,7 +1,7 @@
 package luca.microservice.brewMicroservices.bootstrap;
 
-import luca.microservice.brewMicroservices.Model.BeerStyleEnum;
-import luca.microservice.brewMicroservices.entities.Beer;
+import luca.microservice.brewMicroservices.web.Model.BeerStyleEnum;
+import luca.microservice.brewMicroservices.domain.Beer;
 import luca.microservice.brewMicroservices.repositories.BeerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

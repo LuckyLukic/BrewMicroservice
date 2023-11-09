@@ -1,7 +1,8 @@
 package luca.microservice.brewMicroservices.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import luca.microservice.brewMicroservices.Model.BeerDto;
+import luca.microservice.brewMicroservices.web.Model.BeerDto;
+import luca.microservice.brewMicroservices.web.controller.BeerController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

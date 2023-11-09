@@ -1,4 +1,4 @@
-package luca.microservice.brewMicroservices.Model;
+package luca.microservice.brewMicroservices.web.Model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

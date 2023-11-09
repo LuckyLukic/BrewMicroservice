@@ -1,8 +1,8 @@
-package luca.microservice.brewMicroservices.controller;
+package luca.microservice.brewMicroservices.web.controller;
 
 import jakarta.validation.Valid;
-import luca.microservice.brewMicroservices.Model.BeerDto;
-import luca.microservice.brewMicroservices.service.BeerService;
+import luca.microservice.brewMicroservices.web.Model.BeerDto;
+import luca.microservice.brewMicroservices.web.service.BeerService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package luca.microservice.brewMicroservices.Model;
+package luca.microservice.brewMicroservices.web.Model;
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
